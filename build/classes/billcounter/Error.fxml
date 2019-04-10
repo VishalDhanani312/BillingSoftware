@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #2C3E50;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billcounter.ErrorController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="11.0" prefHeight="278.0" prefWidth="475.0" style="-fx-background-color: white; -fx-background-radius: 250;">
+         <children>
+            <Label layoutX="177.0" layoutY="35.0" style="-fx-background-color: #2C3E50; -fx-background-radius: 100;" text="  ERROR !!  " textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorlabel" alignment="CENTER" layoutX="84.0" layoutY="88.0" prefHeight="150.0" prefWidth="308.0" text="You have Entered Invalid Entry Or Some Fields may be Emptyt !" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
